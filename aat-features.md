@@ -8,7 +8,7 @@ The [AAT specification](https://developer.apple.com/fonts/TrueType-Reference-Man
  - `kRequiredLigaturesOnSelector`	Required Ligatures
  - `kCommonLigaturesOnSelector`	Common Ligatures
  - `kRareLigaturesOnSelector`	Rare Ligatures
- - `kLogosOnSelector`	Logos, deprecated
+ - `kLogosOnSelector`	Logos, *deprecated*
  - `kRebusPicturesOnSelector`	Rebus Pictures
  - `kDiphthongLigaturesOnSelector`	Diphthong Ligatures
  - `kSquaredLigaturesOnSelector`	Squared Ligatures
@@ -20,51 +20,51 @@ The [AAT specification](https://developer.apple.com/fonts/TrueType-Reference-Man
  - `kUnconnectedSelector`	Unconnected
  - `kPartiallyConnectedSelector`	Partially Connected
  - `kCursiveSelector`	Cursive
-- `kLetterCase`	Letter Case (selector), deprecated
- - `kUpperAndLowerCaseSelectorUpper & Lower Case, deprecated
- - `kAllCapsSelectorAll Caps, deprecated
- - `kAllLowerCaseSelectorAll Lower Case, deprecated
- - `kSmallCapsSelectorSmall Caps, deprecated
- - `kInitialCapsSelectorInitial Caps, deprecated
- - `kInitialCapsAndSmallCapsSelectorInitial Caps and Small Caps, deprecated
-- `kVerticalSubstitutionVertical Substitution
-- `kLinguisticRearrangementLinguistic Rearrangement
-- `kNumberSpacingNumber Spacing (selector)
+- `kLetterCase`	Letter Case (selector), *deprecated*
+ - `kUpperAndLowerCaseSelector`Upper & Lower Case, *deprecated*
+ - `kAllCapsSelecto`rAll Caps, *deprecated*
+ - `kAllLowerCaseSelecto`rAll Lower Case, *deprecated*
+ - `kSmallCapsSelector`Small Caps, *deprecated*
+ - `kInitialCapsSelector`Initial Caps, *deprecated*
+ - `kInitialCapsAndSmallCapsSelector`Initial Caps and Small Caps, *deprecated*
+- `kVerticalSubstitution`	Vertical Substitution
+- `kLinguisticRearrangement`	Linguistic Rearrangement
+- `kNumberSpacing`	Number Spacing (selector)
  - `kMonospacedNumbersSelector`	Monospaced Numbers
  - `kProportionalNumbersSelector`	Proportional Numbers
  - `kThirdWidthNumbersSelector`	Third-width Numerals
  - `kQuarterWidthNumbersSelector`	Quarter-width Numerals
-- `kSmartSwashSmart Swashes (selector)
+- `kSmartSwash`	Smart Swashes (selector)
  - `kWordInitialSwashesOnSelector`	Word Initial Swashes
  - `kWordFinalSwashesOnSelector`	Word Final Swashes
- - `kLineInitialSwashesOnSelector`	Line Initial Swashes, deprecated
- - `kLineFinalSwashesOnSelector`	Line Final Swashes, deprecated
- - `kNonFinalSwashesOnSelector`	Non-Final Swashes `	
-- `kDiacriticsDiacritics (selector)
+ - `kLineInitialSwashesOnSelector`	Line Initial Swashes, *deprecated*
+ - `kLineFinalSwashesOnSelector`	Line Final Swashes, *deprecated*
+ - `kNonFinalSwashesOnSelector`	Non-Final Swashes
+- `kDiacritics`	Diacritics (selector)
  - `kShowDiacriticsSelector`	Show Diacritics
  - `kHideDiacriticsSelector`	Hide Diacritics
  - `kDecomposeDiacriticsSelector`	Decompose Diacritics
-- `kVerticalPositionVertical Position (selector)
-- `kFractionsFractions (selector)
+- `kVerticalPosition`	Vertical Position (selector)
+- `kFractions`	Fractions (selector)
  - `kNoFractionsSelector`	No Fractions
  - `kVerticalFractionsSelector`	Vertical Fractions
  - `kDiagonalFractionsSelector`	Diagonal Fractions
 - `kOverlappingCharactersOverlapping Characters
-- `kTypographicExtrasTypographic Extras (selector)
- - `kHyphensToEmDashOnSelector`	Hyphens to Em Dash, deprecated
- - `kHyphenToEnDashOnSelector`	Hyphen to En Dash, deprecated
+- `kTypographicExtras`	Typographic Extras (selector)
+ - `kHyphensToEmDashOnSelector`	Hyphens to Em Dash, *deprecated*
+ - `kHyphenToEnDashOnSelector`	Hyphen to En Dash, *deprecated*
  - `kSlashedZeroOnSelector`	Unslashed Zero
- - `kFormInterrobangOnSelector`	Form Interrobang, deprecated
- - `kSmartQuotesOnSelector`	Smart Quotes, deprecated
- - `kPeriodsToEllipsisOnSelector`	Periods to Ellipsis, deprecated
-- `kMathematicalExtrasMathematical Extras (selector)
- - `kHyphenToMinusOnSelector`	Hyphen To Minus, deprecated
- - `kAsteriskToMultiplyOnSelector`	Asterisk to Multiply, deprecated
- - `kSlashToDivideOnSelector`	Slash to Divide, deprecated
- - `kInequalityLigaturesOnSelector`	Inequality Ligatures, deprecated
- - `kExponentsOnSelector`	Exponents, deprecated
+ - `kFormInterrobangOnSelector`	Form Interrobang, *deprecated*
+ - `kSmartQuotesOnSelector`	Smart Quotes, *deprecated*
+ - `kPeriodsToEllipsisOnSelector`	Periods to Ellipsis, *deprecated*
+- `kMathematicalExtras`	Mathematical Extras (selector)
+ - `kHyphenToMinusOnSelector`	Hyphen To Minus, *deprecated*
+ - `kAsteriskToMultiplyOnSelector`	Asterisk to Multiply, *deprecated*
+ - `kSlashToDivideOnSelector`	Slash to Divide, *deprecated*
+ - `kInequalityLigaturesOnSelector`	Inequality Ligatures, *deprecated*
+ - `kExponentsOnSelector`	Exponents, *deprecated*
  - `kMathematicalGreekOnSelector`	Mathematical Greek
-- `kOrnamentSetsOrnament Sets (selector)
+- `kOrnamentSets`	Ornament Sets (selector)
  - `kNoOrnamentsSelector`	None
  - `kDingbatsSelector`	Dingbats
  - `kPiCharactersSelector`	Pi Characters
@@ -72,21 +72,21 @@ The [AAT specification](https://developer.apple.com/fonts/TrueType-Reference-Man
  - `kDecorativeBordersSelector`	Decorative Borders
  - `kInternationalSymbolsSelector`	International Symbols
  - `kMathSymbolsSelector`	Math Symbols
-- `kCharacterAlternativesCharacter Alternatives
-- `kDesignComplexityDesign Complexity (selector)
+- `kCharacterAlternatives`	Character Alternatives
+- `kDesignComplexity`	Design Complexity (selector)
  - `kDesignLevel1Selector`	Design Level 1
  - `kDesignLevel2Selector`	Design Level 2
  - `kDesignLevel3Selector`	Design Level 3
  - `kDesignLevel4Selector`	Design Level 4
  - `kDesignLevel5Selector`	Design Level 5
-- `kStyleOptionsStyle Options (selector)
+- `kStyleOptions`	Style Options (selector)
  - `kNoStyleOptionsSelector`	No Style Options
  - `kDisplayTextSelector`	Display Text
  - `kEngravedTextSelector`	Engraved Text
  - `kIlluminatedCapsSelector`	Illuminated Caps
  - `kTitlingCapsSelector`	Titling Caps
  - `kTallCapsSelector`	Tall Caps
-- `kCharacterShapeCharacter Shape (selector)
+- `kCharacterShape`	Character Shape (selector)
  - `kTraditionalCharactersSelector`	Traditional Glyphs
  - `kSimplifiedCharactersSelector`	Simplified Glyphs
  - `kJIS1978CharactersSelector`	JIS 1978 Glyphs
@@ -102,10 +102,10 @@ The [AAT specification](https://developer.apple.com/fonts/TrueType-Reference-Man
  - `kHojoCharactersSelector`	Hojo Glyphs
  - `kNLCCharactersSelector`	NLC Glyphs
  - `kTraditionalNamesCharactersSelector`	Traditional Names
-- `kNumberCaseNumber Case (selector)
+- `kNumberCase`	Number Case (selector)
  - `kLowerCaseNumbersSelecto`	rLower Case Numbers
  - `kUpperCaseNumbersSelector`	Upper Case Numbers
-- `kTextSpacingText Spacing (selector)
+- `kTextSpacing`	Text Spacing (selector)
  - `kProportionalTextSelector`	Proportional
  - `kMonospacedTextSelector`	Monospace
  - `kHalfWidthTextSelector`	Half-width
@@ -113,18 +113,18 @@ The [AAT specification](https://developer.apple.com/fonts/TrueType-Reference-Man
  - `kQuarterWidthTextSelector`	Quarter-width
  - `kAltProportionalTextSelector`	Alternate Proportional
  - `kAltHalfWidthTextSelector`	Alternate Half-width
-- `kTransliterationTransliteration (selector)
+- `kTransliteration`	Transliteration (selector)
  - `kNoTransliterationSelector`	No Transliteration
- - `kHanjaToHangulSelecto`	rHanja to Hangul, deprecated
- - `kHiraganaToKatakanaSelector`	Hiragana To Katakana, deprecated
- - `kKatakanaToHiraganaSelector`	Katakana To Hiragana, deprecated
- - `kKanaToRomanizationSelector`	Kana To Romanization, deprecated
- - `kRomanizationToHiraganaSelector`	Romanization To Hiragana, deprecated
- - `kRomanizationToKatakanaSelector`	Romanization To Katakana, deprecated
- - `kHanjaToHangulAltOneSelector`	Hanja To Hangul Alt One, deprecated
- - `kHanjaToHangulAltTwoSelector`	Hanja To Hangul Alt Two, deprecated
- - `kHanjaToHangulAltThreeSelector`	Hanja To Hangul Alt Three, deprecated
-- `kAnnotationAnnotation (selector)
+ - `kHanjaToHangulSelector`	Hanja to Hangul, *deprecated*
+ - `kHiraganaToKatakanaSelector`	Hiragana To Katakana, *deprecated*
+ - `kKatakanaToHiraganaSelector`	Katakana To Hiragana, *deprecated*
+ - `kKanaToRomanizationSelector`	Kana To Romanization, *deprecated*
+ - `kRomanizationToHiraganaSelector`	Romanization To Hiragana, *deprecated*
+ - `kRomanizationToKatakanaSelector`	Romanization To Katakana, *deprecated*
+ - `kHanjaToHangulAltOneSelector`	Hanja To Hangul Alt One, *deprecated*
+ - `kHanjaToHangulAltTwoSelector`	Hanja To Hangul Alt Two, *deprecated*
+ - `kHanjaToHangulAltThreeSelector`	Hanja To Hangul Alt Three, *deprecated*
+- `kAnnotation`	Annotation (selector)
  - `kNoAnnotationSelector`	No Annotation
  - `kBoxAnnotationSelector`	Box Annotation
  - `kRoundedBoxAnnotationSelector`	Rounded Box Annotation
@@ -136,3 +136,5 @@ The [AAT specification](https://developer.apple.com/fonts/TrueType-Reference-Man
  - `kDiamondAnnotationSelector`	Diamond Annotation
  - `kInvertedBoxAnnotationSelector`	Inverted Box Annotation	
  - `kInvertedRoundedBoxAnnotationSelector`	Inverted Rounded Box Annotation
+
+NOTE: This list is currently incomplete.  More to follow.
