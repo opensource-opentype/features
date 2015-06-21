@@ -1,0 +1,138 @@
+Apple Advanced Typography features
+==================================
+
+The [AAT specification](https://developer.apple.com/fonts/TrueType-Reference-Manual/RM09/AppendixF.html) defines the following "feature" tags.  
+
+- kAllTypographicFeatures	All Typographic Features
+- kLigatures	Ligatures (selector)
+ - kRequiredLigaturesOnSelector	Required Ligatures
+ - kCommonLigaturesOnSelector	Common Ligatures
+ - kRareLigaturesOnSelector	Rare Ligatures
+ - kLogosOnSelector	Logos, deprecated
+ - kRebusPicturesOnSelector	Rebus Pictures
+ - kDiphthongLigaturesOnSelector	Diphthong Ligatures
+ - kSquaredLigaturesOnSelector	Squared Ligatures
+ - kAbbrevSquaredLigaturesOnSelector	Squared Ligatures, Abbreviated
+ - kSymbolLigaturesOnSelector	Symbol Ligatures
+ - kContextualLigaturesOnSelector	Contextual Ligatures
+ - kHistoricalLigaturesOnSelector	Historical Ligatures
+- kCursiveConnection	Cursive Connection (selector)
+ - kUnconnectedSelector	Unconnected
+ - kPartiallyConnectedSelector	Partially Connected
+ - kCursiveSelector	Cursive
+- kLetterCase	Letter Case (selector), deprecated
+ - kUpperAndLowerCaseSelectorUpper & Lower Case, deprecated
+ - kAllCapsSelectorAll Caps, deprecated
+ - kAllLowerCaseSelectorAll Lower Case, deprecated
+ - kSmallCapsSelectorSmall Caps, deprecated
+ - kInitialCapsSelectorInitial Caps, deprecated
+ - kInitialCapsAndSmallCapsSelectorInitial Caps and Small Caps, deprecated
+- kVerticalSubstitutionVertical Substitution
+- kLinguisticRearrangementLinguistic Rearrangement
+- kNumberSpacingNumber Spacing (selector)
+ - kMonospacedNumbersSelector	Monospaced Numbers 	
+ - kProportionalNumbersSelector	Proportional Numbers 	
+ - kThirdWidthNumbersSelector	Third-width Numerals 	
+ - kQuarterWidthNumbersSelector	Quarter-width Numerals 	
+- kSmartSwashSmart Swashes (selector)
+ - kWordInitialSwashesOnSelector	Word Initial Swashes 	
+ - kWordFinalSwashesOnSelector	Word Final Swashes 	
+ - kLineInitialSwashesOnSelector	Line Initial Swashes, deprecated
+ - kLineFinalSwashesOnSelector	Line Final Swashes, deprecated
+ - kNonFinalSwashesOnSelector	Non-Final Swashes 	
+- kDiacriticsDiacritics (selector)
+ - kShowDiacriticsSelector	Show Diacritics 	
+ - kHideDiacriticsSelector	Hide Diacritics 	
+ - kDecomposeDiacriticsSelector	Decompose Diacritics 	
+- kVerticalPositionVertical Position (selector)
+- kFractionsFractions (selector)
+ - kNoFractionsSelector	No Fractions 	
+ - kVerticalFractionsSelector	Vertical Fractions 	
+ - kDiagonalFractionsSelector	Diagonal Fractions 	
+- kOverlappingCharactersOverlapping Characters
+- kTypographicExtrasTypographic Extras (selector)
+ - kHyphensToEmDashOnSelector	Hyphens to Em Dash, deprecated
+ - kHyphenToEnDashOnSelector	Hyphen to En Dash, deprecated
+ - kSlashedZeroOnSelector	Unslashed Zero 	
+ - kFormInterrobangOnSelector	Form Interrobang, deprecated
+ - kSmartQuotesOnSelector	Smart Quotes, deprecated
+ - kPeriodsToEllipsisOnSelector	Periods to Ellipsis, deprecated
+- kMathematicalExtrasMathematical Extras (selector)
+ - kHyphenToMinusOnSelector	Hyphen To Minus, deprecated
+ - kAsteriskToMultiplyOnSelector	Asterisk to Multiply, deprecated
+ - kSlashToDivideOnSelector	Slash to Divide, deprecated
+ - kInequalityLigaturesOnSelector	Inequality Ligatures, deprecated
+ - kExponentsOnSelector	Exponents, deprecated
+ - kMathematicalGreekOnSelector	Mathematical Greek 	
+- kOrnamentSetsOrnament Sets (selector)
+ - kNoOrnamentsSelector	None 	
+ - kDingbatsSelector	Dingbats 	
+ - kPiCharactersSelector	Pi Characters 	
+ - kFleuronsSelector	Fleurons 	
+ - kDecorativeBordersSelector	Decorative Borders 	
+ - kInternationalSymbolsSelector	International Symbols 	
+ - kMathSymbolsSelector	Math Symbols 	
+- kCharacterAlternativesCharacter Alternatives
+- kDesignComplexityDesign Complexity (selector)
+ - kDesignLevel1Selector	Design Level 1 	
+ - kDesignLevel2Selector	Design Level 2 	
+ - kDesignLevel3Selector	Design Level 3 	
+ - kDesignLevel4Selector	Design Level 4 	
+ - kDesignLevel5Selector	Design Level 5 	
+- kStyleOptionsStyle Options (selector)
+ - kNoStyleOptionsSelector	No Style Options 	
+ - kDisplayTextSelector	Display Text 	
+ - kEngravedTextSelector	Engraved Text 	
+ - kIlluminatedCapsSelector	Illuminated Caps 	
+ - kTitlingCapsSelector	Titling Caps 	
+ - kTallCapsSelector	Tall Caps 	
+- kCharacterShapeCharacter Shape (selector)
+ - kTraditionalCharactersSelector	Traditional Glyphs 	
+ - kSimplifiedCharactersSelector	Simplified Glyphs 	
+ - kJIS1978CharactersSelector	JIS 1978 Glyphs 	
+ - kJIS1983CharactersSelector	JIS 1983 Glyphs 	
+ - kJIS1990CharactersSelector	JIS 1990 Glyphs 	
+ - kTraditionalAltOneSelector	Traditional Glyphs, Alternative Set 1 	
+ - kTraditionalAltTwoSelector	Traditional Glyphs, Alternative Set 2 	
+ - kTraditionalAltThreeSelector	Traditional Glyphs, Alternative Set 3 	
+ - kTraditionalAltFourSelector	Traditional Glyphs, Alternative Set 4 	
+ - kTraditionalAltFiveSelector	Traditional Glyphs, Alternative Set 5 	
+ - kExpertCharactersSelector	Expert Glyphs 	
+ - kJIS2004CharactersSelector	JIS 2004 Glyphs 	
+ - kHojoCharactersSelector	Hojo Glyphs 	
+ - kNLCCharactersSelector	NLC Glyphs 	
+ - kTraditionalNamesCharactersSelector	Traditional Names 	
+- kNumberCaseNumber Case (selector)
+ - kLowerCaseNumbersSelecto	rLower Case Numbers 	
+ - kUpperCaseNumbersSelector	Upper Case Numbers 	
+- kTextSpacingText Spacing (selector)
+ - kProportionalTextSelector	Proportional 	
+ - kMonospacedTextSelector	Monospace 	
+ - kHalfWidthTextSelector	Half-width 	
+ - kThirdWidthTextSelector	Third-width 	
+ - kQuarterWidthTextSelector	Quarter-width 	
+ - kAltProportionalTextSelector	Alternate Proportional 	
+ - kAltHalfWidthTextSelector	Alternate Half-width 	
+- kTransliterationTransliteration (selector)
+ - kNoTransliterationSelector	No Transliteration 	
+ - kHanjaToHangulSelecto	rHanja to Hangul, deprecated
+ - kHiraganaToKatakanaSelector	Hiragana To Katakana, deprecated
+ - kKatakanaToHiraganaSelector	Katakana To Hiragana, deprecated
+ - kKanaToRomanizationSelector	Kana To Romanization, deprecated
+ - kRomanizationToHiraganaSelector	Romanization To Hiragana, deprecated
+ - kRomanizationToKatakanaSelector	Romanization To Katakana, deprecated
+ - kHanjaToHangulAltOneSelector	Hanja To Hangul Alt One, deprecated
+ - kHanjaToHangulAltTwoSelector	Hanja To Hangul Alt Two, deprecated
+ - kHanjaToHangulAltThreeSelector	Hanja To Hangul Alt Three, deprecated
+- kAnnotationAnnotation (selector)
+ - kNoAnnotationSelector	No Annotation 	
+ - kBoxAnnotationSelector	Box Annotation 	
+ - kRoundedBoxAnnotationSelector	Rounded Box Annotation 	
+ - kCircleAnnotationSelector	Circle Annotation 	
+ - kInvertedCircleAnnotationSelector	Inverted Circle Annotation 	
+ - kParenthesisAnnotationSelector	Parenthesis Annotation 	
+ - kPeriodAnnotationSelector	Period Annotation 	
+ - kRomanNumeralAnnotationSelector	Roman Numeral Annotation 	
+ - kDiamondAnnotationSelector	Diamond Annotation 	
+ - kInvertedBoxAnnotationSelector	Inverted Box Annotation 	
+ - kInvertedRoundedBoxAnnotationSelector	Inverted Rounded Box Annotation 	

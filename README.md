@@ -49,17 +49,19 @@ considerations.
 Registered features
 ===================
 
-The bulk of modern fonts use the OpenType format, which has THIS SET
-OF FEATURES HERE, THAT I'M LINKING TO.
+The bulk of modern fonts use the OpenType format, which has [a lengthy
+list of pre-defined features](otf-features.md).  This list comes from
+the OpenType specification.
 
 Other fonts may use the AAT or Graphite formats, which have their own
 sets of feature definitions.  
 
-* AAT
-* Graphite
+* [AAT](aat-features.md)
+* [Graphite](graphite-features.md)
 
-Many of these features map to corresponding OpenType features, HERE IS
-A MAPPING.
+Many of these features map conceptually to corresponding features also
+defined in OpenType.  HarfBuzz, the free-software OpenType shaping
+library, comes with a [mapping](harfbuzz-feature-map.md).
 
 
 
@@ -75,6 +77,6 @@ optional" categories.
 Our attempt to break down the set of well-known features into easily
 understood categories can be found on the 
 
-* Feature breakdown
+* [Feature breakdown](feature-breakdown.md)
 
 page.
