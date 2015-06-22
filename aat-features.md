@@ -4,7 +4,7 @@ Apple Advanced Typography features
 The [AAT specification](https://developer.apple.com/fonts/TrueType-Reference-Manual/RM09/AppendixF.html) defines the following "feature" tags.  
 
 - `kAllTypographicFeatures`	All Typographic Features
-- `kLigatures`	Ligatures (selector)
+- `kLigatures`	Ligatures (non-exclusive set)
  - `kRequiredLigaturesOnSelector`	Required Ligatures
  - `kCommonLigaturesOnSelector`	Common Ligatures
  - `kRareLigaturesOnSelector`	Rare Ligatures
@@ -16,11 +16,11 @@ The [AAT specification](https://developer.apple.com/fonts/TrueType-Reference-Man
  - `kSymbolLigaturesOnSelector`	Symbol Ligatures
  - `kContextualLigaturesOnSelector`	Contextual Ligatures
  - `kHistoricalLigaturesOnSelector`	Historical Ligatures
-- `kCursiveConnection`	Cursive Connection (selector)
+- `kCursiveConnection`	Cursive Connection (non-exclusive set)
  - `kUnconnectedSelector`	Unconnected
  - `kPartiallyConnectedSelector`	Partially Connected
  - `kCursiveSelector`	Cursive
-- `kLetterCase`	Letter Case (selector), *deprecated*
+- `kLetterCase`	Letter Case (non-exclusive set), *deprecated*
  - `kUpperAndLowerCaseSelector`Upper & Lower Case, *deprecated*
  - `kAllCapsSelecto`rAll Caps, *deprecated*
  - `kAllLowerCaseSelecto`rAll Lower Case, *deprecated*
@@ -29,42 +29,42 @@ The [AAT specification](https://developer.apple.com/fonts/TrueType-Reference-Man
  - `kInitialCapsAndSmallCapsSelector`Initial Caps and Small Caps, *deprecated*
 - `kVerticalSubstitution`	Vertical Substitution
 - `kLinguisticRearrangement`	Linguistic Rearrangement
-- `kNumberSpacing`	Number Spacing (selector)
+- `kNumberSpacing`	Number Spacing (non-exclusive set)
  - `kMonospacedNumbersSelector`	Monospaced Numbers
  - `kProportionalNumbersSelector`	Proportional Numbers
  - `kThirdWidthNumbersSelector`	Third-width Numerals
  - `kQuarterWidthNumbersSelector`	Quarter-width Numerals
-- `kSmartSwash`	Smart Swashes (selector)
+- `kSmartSwash`	Smart Swashes (non-exclusive set)
  - `kWordInitialSwashesOnSelector`	Word Initial Swashes
  - `kWordFinalSwashesOnSelector`	Word Final Swashes
  - `kLineInitialSwashesOnSelector`	Line Initial Swashes, *deprecated*
  - `kLineFinalSwashesOnSelector`	Line Final Swashes, *deprecated*
  - `kNonFinalSwashesOnSelector`	Non-Final Swashes
-- `kDiacritics`	Diacritics (selector)
+- `kDiacritics`	Diacritics (non-exclusive set)
  - `kShowDiacriticsSelector`	Show Diacritics
  - `kHideDiacriticsSelector`	Hide Diacritics
  - `kDecomposeDiacriticsSelector`	Decompose Diacritics
-- `kVerticalPosition`	Vertical Position (selector)
-- `kFractions`	Fractions (selector)
+- `kVerticalPosition`	Vertical Position (non-exclusive set)
+- `kFractions`	Fractions (non-exclusive set)
  - `kNoFractionsSelector`	No Fractions
  - `kVerticalFractionsSelector`	Vertical Fractions
  - `kDiagonalFractionsSelector`	Diagonal Fractions
-- `kOverlappingCharactersOverlapping Characters
-- `kTypographicExtras`	Typographic Extras (selector)
+- `kOverlappingCharacters`	Overlapping Characters
+- `kTypographicExtras`	Typographic Extras (non-exclusive set)
  - `kHyphensToEmDashOnSelector`	Hyphens to Em Dash, *deprecated*
  - `kHyphenToEnDashOnSelector`	Hyphen to En Dash, *deprecated*
  - `kSlashedZeroOnSelector`	Unslashed Zero
  - `kFormInterrobangOnSelector`	Form Interrobang, *deprecated*
  - `kSmartQuotesOnSelector`	Smart Quotes, *deprecated*
  - `kPeriodsToEllipsisOnSelector`	Periods to Ellipsis, *deprecated*
-- `kMathematicalExtras`	Mathematical Extras (selector)
+- `kMathematicalExtras`	Mathematical Extras (non-exclusive set)
  - `kHyphenToMinusOnSelector`	Hyphen To Minus, *deprecated*
  - `kAsteriskToMultiplyOnSelector`	Asterisk to Multiply, *deprecated*
  - `kSlashToDivideOnSelector`	Slash to Divide, *deprecated*
  - `kInequalityLigaturesOnSelector`	Inequality Ligatures, *deprecated*
  - `kExponentsOnSelector`	Exponents, *deprecated*
  - `kMathematicalGreekOnSelector`	Mathematical Greek
-- `kOrnamentSets`	Ornament Sets (selector)
+- `kOrnamentSets`	Ornament Sets (non-exclusive set)
  - `kNoOrnamentsSelector`	None
  - `kDingbatsSelector`	Dingbats
  - `kPiCharactersSelector`	Pi Characters
@@ -73,20 +73,20 @@ The [AAT specification](https://developer.apple.com/fonts/TrueType-Reference-Man
  - `kInternationalSymbolsSelector`	International Symbols
  - `kMathSymbolsSelector`	Math Symbols
 - `kCharacterAlternatives`	Character Alternatives
-- `kDesignComplexity`	Design Complexity (selector)
+- `kDesignComplexity`	Design Complexity (non-exclusive set)
  - `kDesignLevel1Selector`	Design Level 1
  - `kDesignLevel2Selector`	Design Level 2
  - `kDesignLevel3Selector`	Design Level 3
  - `kDesignLevel4Selector`	Design Level 4
  - `kDesignLevel5Selector`	Design Level 5
-- `kStyleOptions`	Style Options (selector)
+- `kStyleOptions`	Style Options (non-exclusive set)
  - `kNoStyleOptionsSelector`	No Style Options
  - `kDisplayTextSelector`	Display Text
  - `kEngravedTextSelector`	Engraved Text
  - `kIlluminatedCapsSelector`	Illuminated Caps
  - `kTitlingCapsSelector`	Titling Caps
  - `kTallCapsSelector`	Tall Caps
-- `kCharacterShape`	Character Shape (selector)
+- `kCharacterShape`	Character Shape (non-exclusive set)
  - `kTraditionalCharactersSelector`	Traditional Glyphs
  - `kSimplifiedCharactersSelector`	Simplified Glyphs
  - `kJIS1978CharactersSelector`	JIS 1978 Glyphs
@@ -102,10 +102,10 @@ The [AAT specification](https://developer.apple.com/fonts/TrueType-Reference-Man
  - `kHojoCharactersSelector`	Hojo Glyphs
  - `kNLCCharactersSelector`	NLC Glyphs
  - `kTraditionalNamesCharactersSelector`	Traditional Names
-- `kNumberCase`	Number Case (selector)
+- `kNumberCase`	Number Case (non-exclusive set)
  - `kLowerCaseNumbersSelecto`	rLower Case Numbers
  - `kUpperCaseNumbersSelector`	Upper Case Numbers
-- `kTextSpacing`	Text Spacing (selector)
+- `kTextSpacing`	Text Spacing (non-exclusive set)
  - `kProportionalTextSelector`	Proportional
  - `kMonospacedTextSelector`	Monospace
  - `kHalfWidthTextSelector`	Half-width
@@ -113,7 +113,7 @@ The [AAT specification](https://developer.apple.com/fonts/TrueType-Reference-Man
  - `kQuarterWidthTextSelector`	Quarter-width
  - `kAltProportionalTextSelector`	Alternate Proportional
  - `kAltHalfWidthTextSelector`	Alternate Half-width
-- `kTransliteration`	Transliteration (selector)
+- `kTransliteration`	Transliteration (non-exclusive set)
  - `kNoTransliterationSelector`	No Transliteration
  - `kHanjaToHangulSelector`	Hanja to Hangul, *deprecated*
  - `kHiraganaToKatakanaSelector`	Hiragana To Katakana, *deprecated*
@@ -124,7 +124,7 @@ The [AAT specification](https://developer.apple.com/fonts/TrueType-Reference-Man
  - `kHanjaToHangulAltOneSelector`	Hanja To Hangul Alt One, *deprecated*
  - `kHanjaToHangulAltTwoSelector`	Hanja To Hangul Alt Two, *deprecated*
  - `kHanjaToHangulAltThreeSelector`	Hanja To Hangul Alt Three, *deprecated*
-- `kAnnotation`	Annotation (selector)
+- `kAnnotation`	Annotation (non-exclusive set)
  - `kNoAnnotationSelector`	No Annotation
  - `kBoxAnnotationSelector`	Box Annotation
  - `kRoundedBoxAnnotationSelector`	Rounded Box Annotation
@@ -136,5 +136,86 @@ The [AAT specification](https://developer.apple.com/fonts/TrueType-Reference-Man
  - `kDiamondAnnotationSelector`	Diamond Annotation
  - `kInvertedBoxAnnotationSelector`	Inverted Box Annotation	
  - `kInvertedRoundedBoxAnnotationSelector`	Inverted Rounded Box Annotation
+- `kKanaSpacing`	Kana Spacing (non-exclusive set)
+ - `kFullWidthKanaSelector`	Full Width
+ - `kProportionalKanaSelector`	Proportional
+- `kIdeographicSpacing`	Ideographic Spacing
+ - `kFullWidthIdeographsSelector`	Full Width
+ - `kProportionalIdeographsSelector`	Proportional
+ - `kHalfWidthIdeographsSelector`	Half Width
+- kUnicodeDecomposition`	Unicode Decomposition
+ - `kCanonicalCompositionOnSelector`	Canonical Composition
+ - `kCompatibilityCompositionOnSelector`	Compatibility Composition
+ - `kTranscodingCompositionOnSelector`	Transcoding Composition
+- `kRubyKana`	Ruby Kana (non-exclusive set)
+ - `kNoRubyKanaSelector`	No Ruby Kana, *deprecated*
+ - `kRubyKanaSelector`	Ruby Kana, *deprecated*
+ - `kRubyKanaOnSelector`	Ruby Kana
+- `kCJKSymbolAlternatives`	CJK Symbol Alternatives (non-exclusive set)
+ - `kNoCJKSymbolAlternativesSelector`	No CJK Symbol Alternatives
+ - `kCJKSymbolAltOneSelector`	CJK Symbol Alt One
+ - `kCJKSymbolAltTwoSelector`	CJK Symbol Alt Two
+ - `kCJKSymbolAltThreeSelector`	CJK Symbol Alt Three
+ - `kCJKSymbolAltFourSelector`	CJK Symbol Alt Four
+ - `kCJKSymbolAltFiveSelector`	CJK Symbol Alt Five
+- `kIdeographicAlternatives`	Ideographic Alternatives (non-exclusive set)
+ - `kNoIdeographicAlternativesSelector`	No Ideographic Alternatives
+ - `kIdeographicAltOneSelector`	Ideographic Alt One
+ - `kIdeographicAltTwoSelector`	Ideographic Alt Two
+ - `kIdeographicAltThreeSelector`	Ideographic Alt Three
+ - `kIdeographicAltFourSelector`	Ideographic Alt Four
+ - `kIdeographicAltFiveSelector`	Ideographic Alt Five
+- `kCJKVerticalRomanPlacement`	CJK Vertical Roman Placement (non-exclusive set)
+ - `kCJKVerticalRomanCenteredSelector`	CJK Vertical Roman Centered
+ - `kCJKVerticalRomanHBaselineSelector`	CJK Vertical Roman H Baseline
+- `kItalicCJKRoman`	Italic CJK Roman (non-exclusive set)
+ - `kNoCJKItalicRomanSelector`	No CJK Italic Roman, *deprecated*
+ - `kCJKItalicRomanSelector`	CJK Italic Roman, *deprecated*
+ - `kCJKItalicRomanOnSelector`	CJK Italic Roman
+- `kCaseSensitiveLayout`	(non-exclusive set)
+ - `kCaseSensitiveLayoutOnSelector`	Case Sensitive Layout
+ - `kCaseSensitiveSpacingOnSelector`	Case Sensitive Spacing
+- `kAlternateKana`	Alternate Kana (non-exclusive set)
+ - `kAlternateHorizKanaOnSelector`	Alternate Horizontal Kana
+ - `kAlternateVertKanaOnSelector`	Alternate Vertical Kana
+- `kStylisticAlternatives`	Stylistic Alternatives (non-exclusive set)
+ - `kNoStylisticAlternatesSelector`	No Stylistic Alternates
+ - `kStylisticAltOneOnSelector`	Stylistic Alt One
+ - `kStylisticAltTwoOnSelector`	Stylistic Alt Two
+ - `kStylisticAltThreeOnSelector`	Stylistic Alt Three
+ - `kStylisticAltFourOnSelector`	Stylistic Alt Four
+ - `kStylisticAltFiveOnSelector`	Stylistic Alt Five
+ - `kStylisticAltSixOnSelector`	Stylistic Alt Six
+ - `kStylisticAltSevenOnSelector`	Stylistic Alt Seven
+ - `kStylisticAltEightOnSelector`	Stylistic Alt Eight
+ - `kStylisticAltNineOnSelector`	Stylistic Alt Nine
+ - `kStylisticAltTenOnSelector`	Stylistic Alt Ten
+ - `kStylisticAltElevenOnSelector`	Stylistic Alt Eleven
+ - `kStylisticAltTwelveOnSelector`	Stylistic Alt Twelve
+ - `kStylisticAltThirteenOnSelector`	Stylistic Alt Thirteen
+ - `kStylisticAltFourteenOnSelector`	Stylistic Alt Fourteen
+ - `kStylisticAltFifteenOnSelector`	Stylistic Alt Fifteen
+ - 'kStylisticAltSixteenOnSelector`	Stylistic Alt Sixteen
+ - `kStylisticAltSeventeenOnSelector`	Stylistic Alt Seventeen
+ - `kStylisticAltEighteenOnSelector`	Stylistic Alt Eighteen
+ - `kStylisticAltNineteenOnSelector`	Stylistic Alt Nineteen
+ - `kStylisticAltTwentyOnSelector`	Stylistic Alt Twenty
+- `kContextualAlternates`	Contextual Alternates (non-exclusive set)
+ - `kContextualAlternatesOnSelector`	Contextual Alternates
+ - `kSwashAlternatesOnSelector`	Swash Alternates
+ - `kContextualSwashAlternatesOnSelector`	Contextual Swash Alternates
+- `kLowerCase`	Lower Case (non-exclusive set)
+ - `kDefaultLowerCaseSelector`	Default Lower Case
+ - `kLowerCaseSmallCapsSelector`	Lower Case Small Caps
+ - `kLowerCasePetiteCapsSelector`	Lower Case Petite Caps
+- `kUpperCase`	Upper Case (non-exclusive set)
+ - `kDefaultUpperCaseSelector`	Default Upper Case
+ - `kUpperCaseSmallCapsSelector`	Upper Case Small Caps
+ - `kUpperCasePetiteCapsSelector`	Upper Case Petite Caps
+- `kLanguageTag`	Language Tag
+- `kCJKRomanSpacing`	CJK Roman Spacing
+ - `kHalfWidthCJKRomanSelector`	Half-width
+ - `kProportionalCJKRomanSelector`	Proportional
+ - `kDefaultCJKRomanSelector`	Default Roman
+ - `kFullWidthCJKRomanSelector`	Full-width Roman
 
-NOTE: This list is currently incomplete.  More to follow.
