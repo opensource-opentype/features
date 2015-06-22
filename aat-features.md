@@ -195,7 +195,7 @@ The [AAT specification](https://developer.apple.com/fonts/TrueType-Reference-Man
  - `kStylisticAltThirteenOnSelector`	Stylistic Alt Thirteen
  - `kStylisticAltFourteenOnSelector`	Stylistic Alt Fourteen
  - `kStylisticAltFifteenOnSelector`	Stylistic Alt Fifteen
- - 'kStylisticAltSixteenOnSelector`	Stylistic Alt Sixteen
+ - `kStylisticAltSixteenOnSelector`	Stylistic Alt Sixteen
  - `kStylisticAltSeventeenOnSelector`	Stylistic Alt Seventeen
  - `kStylisticAltEighteenOnSelector`	Stylistic Alt Eighteen
  - `kStylisticAltNineteenOnSelector`	Stylistic Alt Nineteen
