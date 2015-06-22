@@ -1,7 +1,7 @@
 Apple Advanced Typography features
 ==================================
 
-The [AAT specification](https://developer.apple.com/fonts/TrueType-Reference-Manual/RM09/AppendixF.html) defines the following "feature" tags.  
+The [AAT specification](https://developer.apple.com/fonts/TrueType-Reference-Manual/RM09/AppendixF.html) defines the following "feature" codes.  
 
 - `kAllTypographicFeatures`	All Typographic Features
 - `kLigatures`	Ligatures (non-exclusive set)
