@@ -103,7 +103,7 @@ The [AAT specification](https://developer.apple.com/fonts/TrueType-Reference-Man
  - `kNLCCharactersSelector`	NLC Glyphs
  - `kTraditionalNamesCharactersSelector`	Traditional Names
 - `kNumberCase`	Number Case (non-exclusive set)
- - `kLowerCaseNumbersSelecto`	rLower Case Numbers
+ - `kLowerCaseNumbersSelector`	Lower Case Numbers
  - `kUpperCaseNumbersSelector`	Upper Case Numbers
 - `kTextSpacing`	Text Spacing (non-exclusive set)
  - `kProportionalTextSelector`	Proportional
