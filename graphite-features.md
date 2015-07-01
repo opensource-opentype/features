@@ -18,7 +18,7 @@ Gentium font familes.
 Originally, SIL's font families used numeric IDs to identify each
 feature.  As of the 5.000 releases in 2014, however, the features all
 use four-character alphabetic IDs, many of which correspond directly
-to the equivalent [OpenType feature](opentype-features.md).
+to the equivalent [OpenType feature](otf-features.md).
 
 The following list includes the features with an OpenType equivalent;
 the corresponding OpenType feature tag is listed in italics.  The old,
