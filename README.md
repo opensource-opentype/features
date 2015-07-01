@@ -75,8 +75,5 @@ between the "invisible and active all the time" and "entirely
 optional" categories.
 
 Our attempt to break down the set of well-known features into easily
-understood categories can be found on the 
-
-* [Feature breakdown](feature-breakdown.md)
-
-page.
+understood categories can be found on the [feature
+breakdown](feature-breakdown.md) page.

@@ -12,12 +12,12 @@ AAT codes.
 
 The first thing to note is that the AAT codes tend to be more
 granular.  So, for example, the `c2sc` OpenType feature, which means
-"captials to small caps," maps to a set of two AAT selectors taken
+"capitals to small caps," maps to a set of two AAT selectors taken
 together: `kUpperCaseSmallCapsSelector` + `kDefaultUpperCaseSelector`.
 
 The other thing to note is that there are several AAT codes not
 currently supported in this mapping.  Excluding deprecated code and
-the codes that are exlcusively tied to script-shaping features, they are:
+the codes that are exclusively tied to script-shaping features, they are:
 
 - `kRequiredLigaturesOnSelector`	Required Ligatures
 - `kRebusPicturesOnSelector`	Rebus Pictures
