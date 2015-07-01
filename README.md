@@ -1,11 +1,16 @@
 OpenType feature reference material
 ===================================
 
-This repository holds references material pertaining to the syntax,
+This project addresses best practices for applications to implement
+access to advanced font features, primarily those defined in the
+OpenType specification, but also those defined elsewhere, like
+Graphite and Apple Advanced Typography (AAT).
+
+This repository holds reference material outlining the syntax,
 meaning, and interaction of the various OpenType features adressed by
 the Open Source OpenType project.
 
-Where necessary, it will include additional reference information
+Where necessary, it includes additional reference information
 about the various OpenType internals (like GPOS and GSUB tables) and
 language/script information, but in all cases we will try to point to
 external resources.
@@ -14,14 +19,8 @@ What it will not contain, though, is code.  For that, you'll want to
 look in the other repositories.
 
 
-
-Overview
-========
-
-This project addresses best practices for applications to implement
-access to advanced font features, primarily those defined in the
-OpenType specification, but also those defined elsewhere, like
-Graphite and Apple Advanced Typography (AAT).
+What are advanced font features?
+--------------------------------
 
 The features of interest break into a few broad categories.  Some
 define script-shaping behavior that is mandatory to making text look
@@ -47,7 +46,7 @@ considerations.
 
 
 Registered features
-===================
+-------------------
 
 The bulk of modern fonts use the OpenType format, which has [a lengthy
 list of pre-defined features](otf-features.md).  This list comes from
@@ -66,7 +65,7 @@ library, comes with a [mapping](harfbuzz-feature-map.md).
 
 
 Feature classes
-===============
+---------------
 
 Unfortunately, despite the clean-sounding "three categories" described
 above, it is not always obvious whether any particular feature belongs
