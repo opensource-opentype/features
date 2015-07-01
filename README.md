@@ -6,7 +6,7 @@ access to advanced font features, primarily those defined in the
 OpenType specification, but also those defined elsewhere, like
 Graphite and Apple Advanced Typography (AAT).
 
-This repository holds reference material outlining the syntax,
+*This* repository holds reference material outlining the syntax,
 meaning, and interaction of the various OpenType features adressed by
 the Open Source OpenType project.
 
@@ -23,7 +23,7 @@ What are advanced font features?
 --------------------------------
 
 The features of interest break into a few broad categories.  Some
-define script-shaping behavior that is mandatory to making text look
+define script-shaping behavior that is mandatory for making text look
 correct in a given language / writing-system combination.  Some others
 are intended to be active all the time, making adjustments to glyph
 selection or placement without user intervention.  Still others are
