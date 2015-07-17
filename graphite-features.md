@@ -87,19 +87,19 @@ OpenType analogue.
 
 <a name="nonotf"></a>
 
-Graphite features currently `without an OpenType feature equivalent
+Graphite features currently without an OpenType feature equivalent
 ------------------------------------------------------------------
 
-- `brig`		(formerly `1052`) Bridging diacritics 
+- `brig`		(formerly `1052`) Bridging diacritics
 - `pit9`		(formerly `1062`) 9-level pitches
  - `0`	No tramlines
  - `1`	Tramlines
  - `2`	Non-ligated with no tramlines
  - `3`	Non-ligated with tramlines
 
-- `1048`		Orthographic glottal alternate *deprecated*
-- `beta`		(formerly `1060`) Serif beta alternate *deprecated*
-- `dpua`		(formerly `1077`) Show deprecated PUA *deprecated*
-- `dsel`		(formerly `1051`) Diacritic selection *deprecated*
-- `lopr`		(formerly `1054`) Low-profile diacritics *deprecated*
-- `romn`		(formerly `1041`) Romanian-style diacritics *deprecated*
+- `1048`		Orthographic glottal alternate, *deprecated*
+- `beta`		(formerly `1060`) Serif beta alternate, *deprecated*
+- `dpua`		(formerly `1077`) Show deprecated PUA, *deprecated*
+- `dsel`		(formerly `1051`) Diacritic selection, *deprecated*
+- `lopr`		(formerly `1054`) Low-profile diacritics, *deprecated*
+- `romn`		(formerly `1041`) Romanian-style diacritics, *deprecated*
