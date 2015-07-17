@@ -6,17 +6,26 @@ questions for application developers:
 
 - Which features should be enabled by default if they are present in the font
 - Which features should be activated automatically by context
-- Which features should be explicitly presented to the user in the user interface
+- Which features should be explicitly presented to the user in the user interface (see [UI](#ui))
 
 Defaults
 --------
 
-Adobe, Microsoft, and FontLab's Adam Twardoch each have a set of
+[Adobe](http://partners.adobe.com/public/developer/opentype/index_tag5.html), [Microsoft](https://www.microsoft.com/typography/otspec/features_ae.htm), and FontLab's [Adam Twardoch](http://blog.fontlab.com/font-tech/opentype-layout/opentype-layout-feature-classification/) each have a set of
 recommendations as to which features ought to be activated by
-default.  They are indicated in green in the following table.
+default.  They are indicated with "on" against a green background in the
+following table.
+
+Where features marked with "shaper," the recommendation is to leave
+activation and usage of that feature up to the script-shaping library
+(e.g., HarfBuzz).  Features marked "dependent" are dependencies of
+other, higher-level features and are not activated separately.
+Featured marked "contextual" depend on the context of the text or
+document to determine whether they should be enabled.
 
 The three lists agree on *most* features; those where there are
 conflicts are discussed below in the [conflicts](#conflicts) section.
+
 
 <table cellspacing="0" border="0">
 	<colgroup width="64"></colgroup>
@@ -42,25 +51,25 @@ conflicts are discussed below in the [conflicts](#conflicts) section.
 	<tr>
 		<td height="17" align="left" valign=bottom><font color="#000000">abvf</font></td>
 		<td align="left" valign=bottom><font color="#000000">Above-base Forms</font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
 		<td align="left" valign=bottom><font color="#000000"><br></font></td>
 	</tr>
 	<tr>
 		<td height="17" align="left" valign=bottom><font color="#000000">abvm</font></td>
 		<td align="left" valign=bottom><font color="#000000">Above-base Mark Positioning</font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
 		<td align="left" valign=bottom><font color="#000000"><br></font></td>
 	</tr>
 	<tr>
 		<td height="17" align="left" valign=bottom><font color="#000000">abvs</font></td>
 		<td align="left" valign=bottom><font color="#000000">Above-base Substitutions</font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
 		<td align="left" valign=bottom><font color="#000000"><br></font></td>
 	</tr>
 	<tr>
@@ -74,9 +83,9 @@ conflicts are discussed below in the [conflicts](#conflicts) section.
 	<tr>
 		<td height="17" align="left" valign=bottom><font color="#000000">akhn</font></td>
 		<td align="left" valign=bottom><font color="#000000">Akhands</font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
 		<td align="left" valign=bottom><font color="#000000"><br></font></td>
 	</tr>
 	<tr>
@@ -90,25 +99,25 @@ conflicts are discussed below in the [conflicts](#conflicts) section.
 	<tr>
 		<td height="17" align="left" valign=bottom><font color="#000000">blwf</font></td>
 		<td align="left" valign=bottom><font color="#000000">Below-base Forms</font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
 		<td align="left" valign=bottom><font color="#000000"><br></font></td>
 	</tr>
 	<tr>
 		<td height="17" align="left" valign=bottom><font color="#000000">blwm</font></td>
 		<td align="left" valign=bottom><font color="#000000">Below-base Mark Positioning</font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
 		<td align="left" valign=bottom><font color="#000000"><br></font></td>
 	</tr>
 	<tr>
 		<td height="17" align="left" valign=bottom><font color="#000000">blws</font></td>
 		<td align="left" valign=bottom><font color="#000000">Below-base Substitutions</font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
 		<td align="left" valign=bottom><font color="#000000"><br></font></td>
 	</tr>
 	<tr>
@@ -139,16 +148,16 @@ conflicts are discussed below in the [conflicts](#conflicts) section.
 		<td height="17" align="left" valign=bottom><font color="#000000">cfar</font></td>
 		<td align="left" valign=bottom><font color="#000000">Conjunct Form After Ro</font></td>
 		<td align="left" valign=bottom><font color="#000000"><br></font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
 		<td align="left" valign=bottom><font color="#000000"><br></font></td>
 	</tr>
 	<tr>
 		<td height="17" align="left" valign=bottom><font color="#000000">cjct</font></td>
 		<td align="left" valign=bottom><font color="#000000">Conjunct Forms</font></td>
 		<td align="left" valign=bottom><font color="#000000"><br></font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
 		<td align="left" valign=bottom><font color="#000000"><br></font></td>
 	</tr>
 	<tr>
@@ -234,9 +243,9 @@ conflicts are discussed below in the [conflicts](#conflicts) section.
 	<tr>
 		<td height="17" align="left" valign=bottom><font color="#000000">dist</font></td>
 		<td align="left" valign=bottom><font color="#000000">Distances</font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
 		<td align="left" valign=bottom><font color="#000000"><br></font></td>
 	</tr>
 	<tr>
@@ -268,7 +277,7 @@ conflicts are discussed below in the [conflicts](#conflicts) section.
 		<td align="left" valign=bottom><font color="#000000">Dotless forms</font></td>
 		<td align="left" valign=bottom><font color="#000000"><br></font></td>
 		<td align="left" valign=bottom bgcolor="#CC99FF"><font color="#000000">dependent</font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
 		<td align="left" valign=bottom><font color="#000000"><br></font></td>
 	</tr>
 	<tr>
@@ -290,17 +299,17 @@ conflicts are discussed below in the [conflicts](#conflicts) section.
 	<tr>
 		<td height="17" align="left" valign=bottom><font color="#000000">fin2</font></td>
 		<td align="left" valign=bottom><font color="#000000">Terminal Forms #2</font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
 		<td align="left" valign=bottom><font color="#000000"><br></font></td>
 	</tr>
 	<tr>
 		<td height="17" align="left" valign=bottom><font color="#000000">fin3</font></td>
 		<td align="left" valign=bottom><font color="#000000">Terminal Forms #3</font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
 		<td align="left" valign=bottom><font color="#000000"><br></font></td>
 	</tr>
 	<tr>
@@ -308,7 +317,7 @@ conflicts are discussed below in the [conflicts](#conflicts) section.
 		<td align="left" valign=bottom><font color="#000000">Terminal Forms</font></td>
 		<td align="left" valign=bottom bgcolor="#6AD46A"><font color="#000000">on</font></td>
 		<td align="left" valign=bottom bgcolor="#6AD46A"><font color="#000000">on</font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
 		<td align="left" valign=bottom><font color="#000000">special</font></td>
 	</tr>
 	<tr>
@@ -316,7 +325,7 @@ conflicts are discussed below in the [conflicts](#conflicts) section.
 		<td align="left" valign=bottom><font color="#000000">Flattened Ascent Forms</font></td>
 		<td align="left" valign=bottom><font color="#000000"><br></font></td>
 		<td align="left" valign=bottom bgcolor="#FBA743"><font color="#000000">contextual</font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
 		<td align="left" valign=bottom><font color="#000000"><br></font></td>
 	</tr>
 	<tr>
@@ -338,17 +347,17 @@ conflicts are discussed below in the [conflicts](#conflicts) section.
 	<tr>
 		<td height="17" align="left" valign=bottom><font color="#000000">half</font></td>
 		<td align="left" valign=bottom><font color="#000000">Half Forms</font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
 		<td align="left" valign=bottom><font color="#000000"><br></font></td>
 	</tr>
 	<tr>
 		<td height="17" align="left" valign=bottom><font color="#000000">haln</font></td>
 		<td align="left" valign=bottom><font color="#000000">Halant Forms</font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
 		<td align="left" valign=bottom><font color="#000000"><br></font></td>
 	</tr>
 	<tr>
@@ -412,7 +421,7 @@ conflicts are discussed below in the [conflicts](#conflicts) section.
 		<td align="left" valign=bottom><font color="#000000">Initial Forms</font></td>
 		<td align="left" valign=bottom bgcolor="#6AD46A"><font color="#000000">on</font></td>
 		<td align="left" valign=bottom bgcolor="#6AD46A"><font color="#000000">on</font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
 		<td align="left" valign=bottom><font color="#000000">special</font></td>
 	</tr>
 	<tr>
@@ -420,7 +429,7 @@ conflicts are discussed below in the [conflicts](#conflicts) section.
 		<td align="left" valign=bottom><font color="#000000">Isolated Forms</font></td>
 		<td align="left" valign=bottom bgcolor="#6AD46A"><font color="#000000">on</font></td>
 		<td align="left" valign=bottom bgcolor="#6AD46A"><font color="#000000">on</font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
 		<td align="left" valign=bottom><font color="#000000">special</font></td>
 	</tr>
 	<tr>
@@ -522,9 +531,9 @@ conflicts are discussed below in the [conflicts](#conflicts) section.
 	<tr>
 		<td height="17" align="left" valign=bottom><font color="#000000">ljmo</font></td>
 		<td align="left" valign=bottom><font color="#000000">Leading Jamo Forms</font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
 		<td align="left" valign=bottom><font color="#000000"><br></font></td>
 	</tr>
 	<tr>
@@ -562,8 +571,8 @@ conflicts are discussed below in the [conflicts](#conflicts) section.
 	<tr>
 		<td height="17" align="left" valign=bottom><font color="#000000">mark</font></td>
 		<td align="left" valign=bottom><font color="#000000">Mark Positioning</font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
 		<td align="left" valign=bottom bgcolor="#6AD46A"><font color="#000000">on</font></td>
 		<td align="left" valign=bottom><font color="#000000"><br></font></td>
 	</tr>
@@ -571,7 +580,7 @@ conflicts are discussed below in the [conflicts](#conflicts) section.
 		<td height="17" align="left" valign=bottom><font color="#000000">med2</font></td>
 		<td align="left" valign=bottom><font color="#000000">Medial Forms #2</font></td>
 		<td align="left" valign=bottom><font color="#000000"><br></font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
 		<td align="left" valign=bottom bgcolor="#6AD46A"><font color="#000000">on</font></td>
 		<td align="left" valign=bottom><font color="#000000"><br></font></td>
 	</tr>
@@ -580,7 +589,7 @@ conflicts are discussed below in the [conflicts](#conflicts) section.
 		<td align="left" valign=bottom><font color="#000000">Medial Forms</font></td>
 		<td align="left" valign=bottom bgcolor="#6AD46A"><font color="#000000">on</font></td>
 		<td align="left" valign=bottom bgcolor="#6AD46A"><font color="#000000">on</font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
 		<td align="left" valign=bottom><font color="#000000">special</font></td>
 	</tr>
 	<tr>
@@ -602,8 +611,8 @@ conflicts are discussed below in the [conflicts](#conflicts) section.
 	<tr>
 		<td height="17" align="left" valign=bottom><font color="#000000">mset</font></td>
 		<td align="left" valign=bottom><font color="#000000">Mark Positioning via Substitution</font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
 		<td align="left" valign=bottom bgcolor="#6AD46A"><font color="#000000">on</font></td>
 		<td align="left" valign=bottom><font color="#000000"><br></font></td>
 	</tr>
@@ -626,9 +635,9 @@ conflicts are discussed below in the [conflicts](#conflicts) section.
 	<tr>
 		<td height="17" align="left" valign=bottom><font color="#000000">nukt</font></td>
 		<td align="left" valign=bottom><font color="#000000">Nukta Forms</font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
 		<td align="left" valign=bottom><font color="#000000"><br></font></td>
 	</tr>
 	<tr>
@@ -706,33 +715,33 @@ conflicts are discussed below in the [conflicts](#conflicts) section.
 	<tr>
 		<td height="17" align="left" valign=bottom><font color="#000000">pref</font></td>
 		<td align="left" valign=bottom><font color="#000000">Pre-Base Forms</font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
 		<td align="left" valign=bottom><font color="#000000"><br></font></td>
 	</tr>
 	<tr>
 		<td height="17" align="left" valign=bottom><font color="#000000">pres</font></td>
 		<td align="left" valign=bottom><font color="#000000">Pre-base Substitutions</font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
 		<td align="left" valign=bottom><font color="#000000"><br></font></td>
 	</tr>
 	<tr>
 		<td height="17" align="left" valign=bottom><font color="#000000">pstf</font></td>
 		<td align="left" valign=bottom><font color="#000000">Post-base Forms</font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
 		<td align="left" valign=bottom><font color="#000000"><br></font></td>
 	</tr>
 	<tr>
 		<td height="17" align="left" valign=bottom><font color="#000000">psts</font></td>
 		<td align="left" valign=bottom><font color="#000000">Post-base Substitutions</font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
 		<td align="left" valign=bottom><font color="#000000"><br></font></td>
 	</tr>
 	<tr>
@@ -771,8 +780,8 @@ conflicts are discussed below in the [conflicts](#conflicts) section.
 		<td height="17" align="left" valign=bottom><font color="#000000">rkrf</font></td>
 		<td align="left" valign=bottom><font color="#000000">Rakar Forms</font></td>
 		<td align="left" valign=bottom><font color="#000000"><br></font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
 		<td align="left" valign=bottom><font color="#000000"><br></font></td>
 	</tr>
 	<tr>
@@ -786,9 +795,9 @@ conflicts are discussed below in the [conflicts](#conflicts) section.
 	<tr>
 		<td height="17" align="left" valign=bottom><font color="#000000">rphf</font></td>
 		<td align="left" valign=bottom><font color="#000000">Reph Forms</font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
 		<td align="left" valign=bottom><font color="#000000"><br></font></td>
 	</tr>
 	<tr>
@@ -804,7 +813,7 @@ conflicts are discussed below in the [conflicts](#conflicts) section.
 		<td align="left" valign=bottom><font color="#000000">Right-to-left alternates</font></td>
 		<td align="left" valign=bottom bgcolor="#C0C0C0"><font color="#000000">?</font></td>
 		<td align="left" valign=bottom bgcolor="#C0C0C0"><font color="#000000">?</font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
 		<td align="left" valign=bottom><font color="#000000"><br></font></td>
 	</tr>
 	<tr>
@@ -876,7 +885,7 @@ conflicts are discussed below in the [conflicts](#conflicts) section.
 		<td align="left" valign=bottom><font color="#000000">Math Script Style Alternates</font></td>
 		<td align="left" valign=bottom><font color="#000000"><br></font></td>
 		<td align="left" valign=bottom bgcolor="#CC99FF"><font color="#000000">dependent</font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
 		<td align="left" valign=bottom><font color="#000000"><br></font></td>
 	</tr>
 	<tr>
@@ -922,9 +931,9 @@ conflicts are discussed below in the [conflicts](#conflicts) section.
 	<tr>
 		<td height="17" align="left" valign=bottom><font color="#000000">tjmo</font></td>
 		<td align="left" valign=bottom><font color="#000000">Trailing Jamo Forms</font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
 		<td align="left" valign=bottom><font color="#000000"><br></font></td>
 	</tr>
 	<tr>
@@ -978,9 +987,9 @@ conflicts are discussed below in the [conflicts](#conflicts) section.
 	<tr>
 		<td height="17" align="left" valign=bottom><font color="#000000">vatu</font></td>
 		<td align="left" valign=bottom><font color="#000000">Vattu Variants</font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
 		<td align="left" valign=bottom><font color="#000000"><br></font></td>
 	</tr>
 	<tr>
@@ -1010,9 +1019,9 @@ conflicts are discussed below in the [conflicts](#conflicts) section.
 	<tr>
 		<td height="17" align="left" valign=bottom><font color="#000000">vjmo</font></td>
 		<td align="left" valign=bottom><font color="#000000">Vowel Jamo Forms</font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
-		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>complex shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
+		<td align="left" valign=bottom bgcolor="#FFE763"><font color="#000000"><em>shaper</em></font></td>
 		<td align="left" valign=bottom><font color="#000000"><br></font></td>
 	</tr>
 	<tr>
@@ -1082,36 +1091,36 @@ There are 22 features where the various specification recommendations
 disagree about the correct default state, *not* counting those
 instances where one or more of the documents is silent on the question.
 
-altv 	Alternate Vertical Metrics [deprecated]
-case 	Case-Sensitive Forms
-curs 	Cursive Positioning
-expt 	Expert Forms
-falt 	Final Glyph on Line Alternates
-fina 	Terminal Forms
-hkna 	Horizontal Kana Alternates
-init 	Initial Forms
-isol 	Isolated Forms
-ital 	Italics
-jalt 	Justification Alternates
-lfbd 	Left Bounds
-mark 	Mark Positioning
-med2 	Medial Forms #2
-medi 	Medial Forms
-mset 	Mark Positioning via Substitution
-pwid 	Proportional Widths
-rand 	Randomize
-rtbd 	Right Bounds
-ssty 	Math Script Style Alternates
-zero 	Slashed Zero
+- 'altv' 	Alternate Vertical Metrics [deprecated]
+- 'case' 	Case-Sensitive Forms
+- 'curs' 	Cursive Positioning
+- 'expt' 	Expert Forms
+- 'falt' 	Final Glyph on Line Alternates
+- 'fina' 	Terminal Forms
+- 'hkna' 	Horizontal Kana Alternates
+- 'init' 	Initial Forms
+- 'isol' 	Isolated Forms
+- 'ital' 	Italics
+- 'jalt' 	Justification Alternates
+- 'lfbd' 	Left Bounds
+- 'mark' 	Mark Positioning
+- 'med2' 	Medial Forms #2
+- 'medi' 	Medial Forms
+- 'mset' 	Mark Positioning via Substitution
+- 'pwid' 	Proportional Widths
+- 'rand' 	Randomize
+- 'rtbd' 	Right Bounds
+- 'ssty' 	Math Script Style Alternates
+- 'zero' 	Slashed Zero
 
 Several others Twardoch recommends off-by-default or leaving the
 decision up to the shaper, while Adode and Microsoft say the feature
 should be automatically enabled by context, since it is dependent on
 another feature:
 
-dnom 	Denominators
-dtls 	Dotless forms
-numr 	Numerators
+- 'dnom' 	Denominators
+- 'dtls' 	Dotless forms
+- 'numr' 	Numerators
 
 
 <a name="ui"></a>
@@ -1120,6 +1129,22 @@ UI exposure
 -----------
 
 Twardoch makes a point of highlighting those features which should be
-accessible through the user interface.
+accessible through the user interface; this is noted in the right-most
+column.  Note also that he designates some features as "special"
+indicating that the UI access involves more than a simple toggle or checkbox.
 
+Adobe and Microsoft also advise allowing application-wide user
+preferences to determine the state of seven features:
 
+- 'curs' 	Cursive Positioning
+- 'expt' 	Expert Forms
+- 'falt' 	Final Glyph on Line Alternates
+- 'jalt' 	Justification Alternates
+- 'pwid' 	Proportional Widths
+- 'rand' 	Randomize
+- 'zero' 	Slashed Zero
+
+Finally, Adobe and Microsoft advise that usage of the "Italics" feature,
+'ital', be integrated into an application's existing UI for selecting
+roman/italic variants of a font.  Twardoch does not mark 'ital' as a
+special case.
