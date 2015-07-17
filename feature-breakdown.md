@@ -16,7 +16,7 @@ recommendations as to which features ought to be activated by
 default.  They are indicated with "on" against a green background in the
 following table.
 
-Where features marked with "shaper," the recommendation is to leave
+Where features are marked with "shaper," the recommendation is to leave
 activation and usage of that feature up to the script-shaping library
 (e.g., HarfBuzz).  Features marked "dependent" are dependencies of
 other, higher-level features and are not activated separately.
@@ -38,7 +38,7 @@ conflicts are discussed below in the [conflicts](#conflicts) section.
 		<td align="left" valign=bottom><i><font color="#000000">Default: Adobe</font></i></td>
 		<td align="left" valign=bottom><i><font color="#000000">Default: MS</font></i></td>
 		<td align="left" valign=bottom><i><font color="#000000">Default: Twardoch</font></i></td>
-		<td align="left" valign=bottom><i><font color="#000000">UI: Trawdoch</font></i></td>
+		<td align="left" valign=bottom><i><font color="#000000">UI: Twardoch</font></i></td>
 	</tr>
 	<tr>
 		<td height="17" align="left" valign=bottom><font color="#000000">aalt</font></td>
@@ -1091,36 +1091,36 @@ There are 22 features where the various specification recommendations
 disagree about the correct default state, *not* counting those
 instances where one or more of the documents is silent on the question.
 
-- 'altv' 	Alternate Vertical Metrics [deprecated]
-- 'case' 	Case-Sensitive Forms
-- 'curs' 	Cursive Positioning
-- 'expt' 	Expert Forms
-- 'falt' 	Final Glyph on Line Alternates
-- 'fina' 	Terminal Forms
-- 'hkna' 	Horizontal Kana Alternates
-- 'init' 	Initial Forms
-- 'isol' 	Isolated Forms
-- 'ital' 	Italics
-- 'jalt' 	Justification Alternates
-- 'lfbd' 	Left Bounds
-- 'mark' 	Mark Positioning
-- 'med2' 	Medial Forms #2
-- 'medi' 	Medial Forms
-- 'mset' 	Mark Positioning via Substitution
-- 'pwid' 	Proportional Widths
-- 'rand' 	Randomize
-- 'rtbd' 	Right Bounds
-- 'ssty' 	Math Script Style Alternates
-- 'zero' 	Slashed Zero
+- `altv` 	Alternate Vertical Metrics [deprecated]
+- `case` 	Case-Sensitive Forms
+- `curs` 	Cursive Positioning
+- `expt` 	Expert Forms
+- `falt` 	Final Glyph on Line Alternates
+- `fina` 	Terminal Forms
+- `hkna` 	Horizontal Kana Alternates
+- `init` 	Initial Forms
+- `isol` 	Isolated Forms
+- `ital` 	Italics
+- `jalt` 	Justification Alternates
+- `lfbd` 	Left Bounds
+- `mark` 	Mark Positioning
+- `med2` 	Medial Forms #2
+- `medi` 	Medial Forms
+- `mset` 	Mark Positioning via Substitution
+- `pwid` 	Proportional Widths
+- `rand` 	Randomize
+- `rtbd` 	Right Bounds
+- `ssty` 	Math Script Style Alternates
+- `zero` 	Slashed Zero
 
 Several others Twardoch recommends off-by-default or leaving the
 decision up to the shaper, while Adode and Microsoft say the feature
 should be automatically enabled by context, since it is dependent on
 another feature:
 
-- 'dnom' 	Denominators
-- 'dtls' 	Dotless forms
-- 'numr' 	Numerators
+- `dnom` 	Denominators
+- `dtls` 	Dotless forms
+- `numr` 	Numerators
 
 
 <a name="ui"></a>
@@ -1136,15 +1136,15 @@ indicating that the UI access involves more than a simple toggle or checkbox.
 Adobe and Microsoft also advise allowing application-wide user
 preferences to determine the state of seven features:
 
-- 'curs' 	Cursive Positioning
-- 'expt' 	Expert Forms
-- 'falt' 	Final Glyph on Line Alternates
-- 'jalt' 	Justification Alternates
-- 'pwid' 	Proportional Widths
-- 'rand' 	Randomize
-- 'zero' 	Slashed Zero
+- `curs` 	Cursive Positioning
+- `expt` 	Expert Forms
+- `falt` 	Final Glyph on Line Alternates
+- `jalt` 	Justification Alternates
+- `pwid` 	Proportional Widths
+- `rand` 	Randomize
+- `zero` 	Slashed Zero
 
 Finally, Adobe and Microsoft advise that usage of the "Italics" feature,
-'ital', be integrated into an application's existing UI for selecting
-roman/italic variants of a font.  Twardoch does not mark 'ital' as a
+`ital`, be integrated into an application's existing UI for selecting
+roman/italic variants of a font.  Twardoch does not mark `ital` as a
 special case.
